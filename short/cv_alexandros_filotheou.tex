@@ -1,0 +1,129 @@
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text]{GFS Didot} % Main document font
+\setmainfont{cmr17} % Main document font
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LO,RE]{Curriculum Vitae - Alexandros Filotheou}
+
+\usepackage{tikz}
+
+\begin{document}
+
+%\pagestyle{plain} % Removes page numbering
+\pagenumbering{gobble}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Alexandros Filotheou}\bigskip\par}
+
+\section{Personal Data}
+
+\begin{tabular}{rp{10cm}}
+Place and Date of Birth 	& Thessaloniki, Greece | $8$ Nov $1987$ \\
+Address            			  & Plagiari, $57500$, PO Box $530$, Thessaloniki, Greece \\
+%Address            			  & Kungshamra $71$, $17070$, Stockholm, Sweden \\
+%Phone						& $(+30)$ $693-8787677$ | $(+30)$ $23920-25138$ \\
+Phone						          & (+30) 693 87 87 677 \\
+e-mail                    & \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com}
+\end{tabular}\\
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{11cm}}
+$09.2015 - 06.2017$ & \textbf{Master of Science} $-$ Kungliga Tekniska H$\ddot{o}$gskolan (KTH), Stockholm, Sweden\\
+             & Programme title: \textit{Systems, Control and Robotics} \\
+
+&\\
+$09.2005 - 07.2013$ & \textbf{Diploma in Electrical and Computer Engineering} $-$ Aristotle University of Thessaloniki, Thessaloniki, Greece \\
+                    & GPA: $7.94 / 10.0$, Class rank: $23 / 280$ $-$ $92^{nd}$ percentile \\
+&\\
+$09.1999 - 06.2005$ & \textbf{Secondary education diploma} $-$ Anatolia High School, Thessaloniki \\
+                    & GPA: $19.0 / 20.0$ \\
+\end{tabular}\\
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{rp{12cm}}
+
+$10.2013 -07.2014$ & Computer Vision Engineer at PANDORA Robotics Team, Robotics Lab,
+School of Electrical and Computer Engineering, Aristotle University of Thessaloniki \\
+&\\
+%------------------------------------------------
+$10.2011 - 03.2012$ & \textbf{Database Designer, Egnatia Motorway S.A., Thessaloniki, Greece} \\
+&\\
+%------------------------------------------------
+$03.2011 - 05.2011$ & \textbf{Application Developer, Internship at Egnatia Motorway S.A., Thessaloniki, Greece}\\
+&\\
+%------------------------------------------------
+$07.2008 - 06.2009$ & \textbf{Technical Support Assistant at the Hellenic Telecommunications
+Organisation (OTE S.A.) Thessaloniki, Greece}\\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+\section{Computer Skills}
+
+\begin{tabular}{rp{12cm}}
+Languages & C/C++, MATLAB, SQL, Java, Python, Shell Scripting, Assembly \\
+&\\
+Operating / Meta-operating Systems & Linux, ROS \\
+&\\
+Graphics Applications & AutoCAD, Gimp\\
+&\\
+Tools & UML, Git, OpenCV, \LaTeX, Apache HTTP Server,\\
+  & Oracle Forms / Reports, AVR studio, OpenOffice, PSpice \\
+  & Microsoft Visio, Project, Office\\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rp{12cm}}
+English & Fluent - IELTS Score $8.5$ (2014) \\
+French & Basic Knowledge - Delf A2 (2001) \\
+Greek & Native \\
+\end{tabular}
+
+\end{document}
