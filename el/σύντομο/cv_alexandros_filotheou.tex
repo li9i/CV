@@ -1,0 +1,139 @@
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text]{GFS Didot} % Main document font
+%\setmainfont{cmr12} % Main document font
+\setmainfont{GFSdidot} % Main document font
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\setlength{\textheight}{710pt}
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LO,RE]{Βιογραφικό Σημείωμα $-$ Αλέξανδρος Φιλοθέου}
+
+\usepackage{tikz}
+
+\begin{document}
+
+%\pagestyle{plain} % Removes page numbering
+\pagenumbering{gobble}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Dipl.-Ing (EE) Αλέξανδρος Φιλοθέου, M.Sc.}\bigskip\par}
+
+\section{Στοιχεία Ταυτότητος}
+
+\begin{tabular}{rp{10cm}}
+Τόπος $\&$ ημερομηνία γεννήσεως 	& Θεσσαλονίκη | 8 Νοεμβρίου 1987 \\
+Διεύθυνση           			        & Πλαγιάρι, ΤΚ 57500, ΤΘ 530, Θεσσαλονίκη \\
+Τηλέφωνο                          &  693 87 87 677 \\
+e-mail                            & \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com}
+\end{tabular}\\
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Εκπαίδευση}
+
+\begin{tabular}{rp{11cm}}
+09.2015 $-$ 06.2017 & \textbf{Μεταπτυχιακό Δίπλωμα Ειδίκευσης} \\
+                    & KTH Royal Institute of Technology, Στοκχόλμη, Σουηδία\\
+                    & Τίτλος Προγράμματος: \textit{Systems, Control and Robotics}, Σχολή Ηλεκτρολόγων Μηχανικών\\
+
+&\\
+09.2005 $-$ 07.2013 & \textbf{Δίπλωμα Ηλεκτρολόγου Μηχανικού \& Μηχανικού Υπολογιστών} \\
+                    & Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης \\
+                    & Βαθμός: 7.94 / 10.0, Κατάταξη: 23 / 280 $-$ 92$^{ρο}$ εκατοστημόριο \\
+\end{tabular}\\
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Εργασιακή Εμπειρία}
+
+\begin{tabular}{rp{12cm}}
+$09.2016 - 11.2016$ & \textbf{Βοηθός Διδασκαλίας} για το μάθημα DD2380 $-$ Artificial Intelligence, KTH, Στοκχόλμη, Σουηδία\\
+&\\
+%------------------------------------------------
+$10.2013 - 07.2014$ & \textbf{Μηχανικός Μηχανικής Όρασης}, Ομάδα ρομποτικής PANDORA, Εργαστήριο Ρομποτικής,
+Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών, Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης \\
+&\\
+%------------------------------------------------
+$10.2011 - 03.2012$ & \textbf{Σχεδιαστής Βάσεων Δεδομένων}, Εγνατία Οδός Α.Ε., Θεσσαλονίκη \\
+&\\
+%------------------------------------------------
+$03.2011 - 05.2011$ & \textbf{Προγραμματιστής}, Πρακτική Άσκηση, Εγνατία Οδός Α.Ε., Θεσσαονίκη \\
+&\\
+%------------------------------------------------
+$07.2008 - 06.2009$ & \textbf{Βοηθός Τεχνικής Υποστήριξης} Ο.Τ.Ε., Θεσσαλονίκη\\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+\section{Γνώσεις Υπολογιστών}
+
+\begin{tabular}{rp{12cm}}
+Γλώσσες & C/C++, MATLAB, $\{$PL/$\}$SQL, Java, Python, Shell Scripting, Assembly \\
+&\\
+  $\{$Μετα-$\}$λειτουργικά Συστήματα & Linux, ROS \\
+&\\
+Προγράμματα Γραφικών & AutoCAD, Gimp\\
+&\\
+Εργαλεία & UML, Git, OpenCV, \LaTeX, Apache HTTP Server,\\
+  & Oracle Forms / Reports, AVR studio, OpenOffice, PSpice \\
+  & Microsoft Visio, Project, Office\\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Γλώσσες}
+
+\begin{tabular}{rp{12cm}}
+Αγγλικά & Fluent - IELTS Score $8.5$ (2014) \\
+Γαλλικά & Basic Knowledge - Delf A2 (2001) \\
+Ελληνικά & Native
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LINKS
+%----------------------------------------------------------------------------------------
+
+\section{Σύνδεσμοι}
+code: \url{https://github.com/li9i}
+
+demo: \url{https://www.youtube.com/user/canhartt/videos}
+
+\end{document}
